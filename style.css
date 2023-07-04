@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr{
+    width: 500px;
+}
+
+#errors{
+    color: coral;
+}
+
+#board{
+    width: 60vmin;
+    height: 60vmin;
+    margin: 0 auto;
+    border: 1px solid rgb(68, 68, 68);
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.tile{
+    border: 1px solid rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6vmin;
+    font-weight: bold;
+}
+
+#digits{
+    width: 60vmin;
+    height: calc(60vmin/9);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap:2px;
+}
+
+.number{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6vmin;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+
+}
+
+.number-selected{
+    background-color: gray;
+}
+
+.tile-start{
+    background-color: whitesmoke;
+}
+
+.horizontal-line{
+    border-bottom: 2px solid black;
+}
+
+.vertical-line{
+    border-right: 2px solid black;
+}
